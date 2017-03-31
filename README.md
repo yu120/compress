@@ -3,6 +3,12 @@
 目录
 [TOC]
 
+QQ交流群：191958521(微服务基础设施)
+
+其它开源产品：
+
++ 分布式高效ID生产黑科技(sequence)：http://git.oschina.net/yu120/sequence
+
 ### 1 前言
 基于gzip、deflate、lz4、snappy、lzo等算法实现数据压缩，主要用于RPC通讯数据的压缩！
 
