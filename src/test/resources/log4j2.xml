@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Loggers>
+		<Root level="error">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="rpc" />
+		</Root>
+
+		<Logger name="boot" level="info" additivity="false">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="rpc" />
+		</Logger>
+
+		<Logger name="sys" level="info" additivity="false">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="rpc" />
+		</Logger>
+
+		<Logger name="busi" level="info" additivity="false">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="rpc" />
+		</Logger>
+	</Loggers>
+
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%-5level] [%c] [%C]: %msg%n" />
+		</Console>
+		
+		<!--这个会打印出所有的信息，每次大小超过size，则这size大小的日志会自动存入按年份-月份建立的文件夹下面并进行压缩，作为存档 -->
+		<RollingFile name="rpc" fileName="logs/rpc.log" filePattern="logs/bak/rpc-%d{yyyy-MM-dd}_%i.log.gz">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%-5level] [%c] [%C]: %msg%n" />
+			<SizeBasedTriggeringPolicy size="50MB" />
+		</RollingFile>
+	</Appenders>
+	
+</Configuration>

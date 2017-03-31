@@ -1,0 +1,6 @@
+cn.ms.compress.impl.GzipCompress
+cn.ms.compress.impl.DeflaterCompress
+cn.ms.compress.impl.Bzip2Compress
+cn.ms.compress.impl.Lz4Compress
+cn.ms.compress.impl.LzoCompress
+cn.ms.compress.impl.SnappyCompress
