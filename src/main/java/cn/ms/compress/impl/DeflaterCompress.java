@@ -7,12 +7,14 @@ import java.util.zip.Deflater;
 import java.util.zip.Inflater;
 
 import cn.ms.compress.Compress;
+import cn.ms.compress.support.SPI;
 
 /**
  * The Data Compression Based on deflater.
  * 
  * @author lry
  */
+@SPI("deflater")
 public class DeflaterCompress implements Compress {
 
 	@Override

@@ -5,12 +5,14 @@ import java.io.IOException;
 import org.xerial.snappy.Snappy;
 
 import cn.ms.compress.Compress;
+import cn.ms.compress.support.SPI;
 
 /**
  * The Data Compression Based on snappy.
  * 
  * @author lry
  */
+@SPI("snappy")
 public class SnappyCompress implements Compress {
 
 	@Override

@@ -7,12 +7,14 @@ import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
 
 import cn.ms.compress.Compress;
+import cn.ms.compress.support.SPI;
 
 /**
  * The Data Compression Based on gzip.
  * 
  * @author lry
  */
+@SPI("gzip")
 public class GzipCompress implements Compress {
 
 	@Override

@@ -10,12 +10,14 @@ import net.jpountz.lz4.LZ4Compressor;
 import net.jpountz.lz4.LZ4Factory;
 import net.jpountz.lz4.LZ4FastDecompressor;
 import cn.ms.compress.Compress;
+import cn.ms.compress.support.SPI;
 
 /**
  * The Data Compression Based on lz4.
  * 
  * @author lry
  */
+@SPI("lz4")
 public class Lz4Compress implements Compress {
 
 	@Override

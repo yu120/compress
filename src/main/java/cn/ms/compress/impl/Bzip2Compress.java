@@ -8,12 +8,14 @@ import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;
 import org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;
 
 import cn.ms.compress.Compress;
+import cn.ms.compress.support.SPI;
 
 /**
  * The Data Compression Based on bzip2.
  * 
  * @author lry
  */
+@SPI("bzip2")
 public class Bzip2Compress implements Compress {
 
 	@Override

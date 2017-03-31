@@ -12,12 +12,14 @@ import org.anarres.lzo.LzoLibrary;
 import org.anarres.lzo.LzoOutputStream;
 
 import cn.ms.compress.Compress;
+import cn.ms.compress.support.SPI;
 
 /**
  * The Data Compression Based on lzo.
  * 
  * @author lry
  */
+@SPI("lzo")
 public class LzoCompress implements Compress {
 
 	@Override
