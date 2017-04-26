@@ -2,8 +2,9 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/yu120/compress/pulls)
-[![GitHub stars](https://img.shields.io/github/stars/yu120/compress.svg?style=social&label=Stars)](https://github.com/yu120/compress)
-[![GitHub forks](https://img.shields.io/github/forks/yu120/compress.svg?style=social&label=Fork)](https://github.com/yu120/compress)
+[![GitHub Watch](https://img.shields.io/github/forks/yu120/compress.svg?style=social&label=Watch)](https://github.com/yu120/compress)
+[![GitHub Star](https://img.shields.io/github/stars/yu120/compress.svg?style=social&label=Star)](https://github.com/yu120/compress)
+[![GitHub Fork](https://img.shields.io/github/forks/yu120/compress.svg?style=social&label=Fork)](https://github.com/yu120/compress)
 
 目录
 [TOC]
